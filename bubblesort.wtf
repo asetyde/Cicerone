@@ -1,0 +1,41 @@
+initArray int bubble 10;
+initVar int size 10;
+var int currentElement;
+var int nextElement;
+var int temp;
+var int next;
+var int sizeMinor;
+
+
+
+initFunc printAll do
+	for int i=0 i_<_size 1 do
+		print bubble[i];
+	done;
+done;
+
+initFunc bubbleSort do
+	op sizeMinor size - 1;
+	for int i=0 i_<_size 1 do
+		for int j=0 j_<_sizeMinor 1 do
+			op next j + 1;
+			assign currentElement bubble[j];
+			assign nextElement bubble[next];
+			if currentElement_>_nextElement then
+				assign bubble[next] currentElement;
+				assign bubble[j] nextElement;
+			done;
+		done;
+	done;	
+done;
+
+for int i=0 i_<_10 1 do
+	op temp 10 - i;
+	assign bubble[i] temp;
+done;
+
+func printAll;
+
+func bubbleSort;
+print bubblesort_eseguito;
+func printAll;

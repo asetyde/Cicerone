@@ -1,0 +1,7 @@
+> print 
+Error: code <print> print syntax is wrong
+
+> print; 
+Grammar OK
+
+

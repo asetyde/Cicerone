@@ -1,0 +1,31 @@
+initVar int check 8;
+
+initFunc isPrimo do
+	var int cast;
+	var int condition;
+	var float temp;
+	
+	if check_==_2 then 
+		print il_numero_Ã¨_primo;
+	done;
+	else
+		op condition check / 2;
+		while condition_>_1 do
+			op temp check / condition;
+			assign cast temp;
+			op temp cast - temp;
+			if temp_!=_0 then
+				print il_numero_non_Ã¨_primo;
+				setVar condition -1;
+			done;
+			op condition condition - 1;
+		done;
+		if condition_==_-1 then
+			print il_numero_Ã¨_primo;
+		done;
+	
+	done;
+
+done;
+
+func isPrimo;

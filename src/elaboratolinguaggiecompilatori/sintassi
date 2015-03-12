@@ -1,0 +1,62 @@
+------inizializzazione variabile--------
+
+sintassi -> initVar type name value;
+
+sintassi -> var type name;
+
+
+--------operazioni-----------
+
+sintassi -> op finalVar [var-num-string] mathOperator [var-num-string];
+
+
+--------settaggio variabile----------------
+
+sintassi -> setVar name value;
+
+
+--------cancella funzione spazio di memoria associata -------
+
+
+sintassi -> deleteF funcName;
+
+--------utilizzo funzione----------
+
+
+sintassi -> func funcName;
+
+--------stampa var--------
+
+
+sintassi -> print [var-string];
+
+
+----------for---------------------
+
+sintassi -> for [inValue-var] condition incrementalValue do commands; done;
+
+
+----------inizializzazione funzione------
+
+sintassi -> initFunc funcName do commands; done;
+
+
+----------while-----------------
+
+sintassi -> while condition do commands; done;
+
+
+----------elseif----------------
+
+sintassi -> elseif condition then commands; done;
+
+----------if----------------------------
+
+sintassi -> if condition then commands; done;
+
+----------else------------------------------
+
+sintassi -> else commands; done;
+
+
+Sono esclusi da qui tutti i comandi che agiscono direttamente sulla gui come clear ecc;
