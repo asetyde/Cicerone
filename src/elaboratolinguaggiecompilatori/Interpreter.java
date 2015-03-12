@@ -59,6 +59,7 @@ public class Interpreter extends javax.swing.JFrame {
         scriptMode = new javax.swing.JCheckBox();
         jScrollPane1 = new javax.swing.JScrollPane();
         commandsText = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
         barra = new javax.swing.JMenuBar();
         file = new javax.swing.JMenu();
         apriMenu = new javax.swing.JMenuItem();
@@ -77,7 +78,7 @@ public class Interpreter extends javax.swing.JFrame {
         });
 
         interpreterLabel.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        interpreterLabel.setText("INTERPRETER");
+        interpreterLabel.setText("CICERONE");
 
         ExitButton.setText("EXIT");
         ExitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -123,6 +124,9 @@ public class Interpreter extends javax.swing.JFrame {
         commandsText.setRows(5);
         jScrollPane1.setViewportView(commandsText);
 
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 10)); // NOI18N
+        jLabel1.setText("Simple Interpreter with dedicated language");
+
         file.setText("File");
 
         apriMenu.setText("Open");
@@ -166,15 +170,17 @@ public class Interpreter extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(scriptMode)
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(jScrollPane1))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 615, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(helpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ExeButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(checkGrammarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(interpreterLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 347, Short.MAX_VALUE)
+                        .addComponent(interpreterLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(debugButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ExitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -186,7 +192,9 @@ public class Interpreter extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(interpreterLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(interpreterLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1))
                         .addGap(2, 2, 2))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -473,6 +481,7 @@ public class Interpreter extends javax.swing.JFrame {
     private javax.swing.JMenu file;
     private javax.swing.JButton helpButton;
     private javax.swing.JLabel interpreterLabel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JMenuItem salvaMenu;
     private javax.swing.JCheckBox scriptMode;

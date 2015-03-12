@@ -1,31 +1,31 @@
-------inizializzazione variabile--------
+------inizializzazione variabile  //  initit. variables --------
 
 sintassi -> initVar type name value;
 
 sintassi -> var type name;
 
 
---------operazioni-----------
+--------operazioni // operation -----------
 
 sintassi -> op finalVar [var-num-string] mathOperator [var-num-string];
 
 
---------settaggio variabile----------------
+--------settaggio variabile // setting variables----------------
 
 sintassi -> setVar name value;
 
 
---------cancella funzione spazio di memoria associata -------
+--------cancella funzione spazio di memoria associata / delete function  -------
 
 
 sintassi -> deleteF funcName;
 
---------utilizzo funzione----------
+--------utilizzo funzione // use function ----------
 
 
 sintassi -> func funcName;
 
---------stampa var--------
+--------stampa var // print var (string/int/float/etc..) --------
 
 
 sintassi -> print [var-string];
@@ -36,7 +36,7 @@ sintassi -> print [var-string];
 sintassi -> for [inValue-var] condition incrementalValue do commands; done;
 
 
-----------inizializzazione funzione------
+----------inizializzazione funzione // initia. function ------
 
 sintassi -> initFunc funcName do commands; done;
 
@@ -46,7 +46,7 @@ sintassi -> initFunc funcName do commands; done;
 sintassi -> while condition do commands; done;
 
 
-----------elseif----------------
+----------elseif----------------  _> continuative if as if elseif ...elseif else 
 
 sintassi -> elseif condition then commands; done;
 
@@ -54,9 +54,10 @@ sintassi -> elseif condition then commands; done;
 
 sintassi -> if condition then commands; done;
 
-----------else------------------------------
+----------else------------------------------  if ..... else ....
 
 sintassi -> else commands; done;
 
 
 Sono esclusi da qui tutti i comandi che agiscono direttamente sulla gui come clear ecc;
+Exclude all terminal command ( 4 )
